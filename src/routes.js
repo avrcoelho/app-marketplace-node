@@ -11,7 +11,8 @@ const authMiddleware = require('./app/middlewares/auth')
 const controllers = require('./app/controllers')
 const validators = require('./app/validators')
 
-routes.post('/', (req, res) => res.send('Hello Wolrd'))
+routes.get('/', (req, res) => res.send('Hello Wolrd'))
+
 routes.post(
   '/users',
   validate(validators.User),
